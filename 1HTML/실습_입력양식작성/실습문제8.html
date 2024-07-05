@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="실습문제8_납품정보.html">
+    <h1>납품관리</h1>
+    <fieldset>
+        <legend>납품자 정보</legend>
+        <ol>
+            <li>
+                <label for="Sname">납품자명 : </label>
+                <input type="text" name="Sname" id="Sname" placeholder="name">
+            </li>
+            <li>
+                <label for="email">email : </label>
+                <input type="email" name="email" id="email" placeholder="answs@naver.com">
+            </li>
+            <li>
+                <label for="homepage">홈페이지 : </label>
+                <input type="url" name="homepage" id="homepage" placeholder="http://">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>납품정보</legend>
+        <ul>
+            <li>
+                <label for="Pname">상품명 : </label>
+                <input type="text" name="Pname" id="Pname">
+            </li>
+            <li>
+                <label for="amount">납품수량 : </label>
+                <input type="number" name="amount" id="amount" placeholder="최소 100"
+                min="100">
+            </li>
+            <li>
+                <label for="quality">납품등급 : </label>
+                <input type="range" name="quality" id="quality">
+            </li>
+            <li>
+                <label for="etc">기타사항 : </label>
+                <textarea name="etc" id="etc"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+    <button>send message</button>
+    </form>
+</body>
+</html>

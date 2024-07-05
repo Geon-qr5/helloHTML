@@ -18,10 +18,38 @@
   </head>
   <body>
 		<div id="container">
-			프런트엔드 개발자 지원서
-			
-			<form>
-				
+			<h1>프런트엔드 개발자 지원서</h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form action="실습문제6_접수완료.html">
+				<h4>개인정보</h4>
+				<ul>
+					<li>
+						<label for="name">이름</label>
+						<input type="text" id="name" placeholder="공백없이 입력하세요.">		
+					</li>
+					<li>
+						<label for="PhoneNum">연락처</label>
+						<input type="text" id="PhoneNum" >	
+					</li>
+				</ul>
+				<h4>지원 분야</h4>
+				<ul>
+					<li>
+						<input type="radio" name="support" value="Wep_p"> 웹 퍼블리싱
+					</li>
+					<li>
+						<input type="radio" name="support" value="Wep_A"> 웹 애플리케이션 개발
+					</li>
+					<li>
+						<input type="radio" name="support" value="Tool"> 개발 환경 개선
+					</li>
+				</ul>
+				<h4>지원동기</h4>
+				<textarea name="" id="" cols="65" rows="5"
+                placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+				<button>접수하기</button>
+				<button type="reset">다시쓰기</button>						
 			</form>
 		</div>
   </body>
