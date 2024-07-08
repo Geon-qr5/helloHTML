@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영역관련태그</title>
+    <!-- 내부스타일 : 웹문서 안에서 사용할 스타일을 문자 안에서 정리 한 것
+                    head태그 내부에 정의
+                    style태그 사이에 스타일을 지정-->
     <style>
+        /* css 주석 : "ctrl + /"" */
+        /* 선택자 {
+            속성 : 속성값;
+            속성 : 속성값;
+            ...
+        } */
+
         /* 여러요소에 적용하는 방법 , 를 이용해서 연결 */
         h1, div {
             border: 10px solid black;
@@ -16,6 +26,8 @@
             width: 300px;
         }
     </style>
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--
@@ -42,7 +54,8 @@
         tip. 해당 요소의 영역을 확인하는 방법
             border를 이용해 영역을 확인 할 수 있다!
     -->
-    <div>첫번째 영역</div>
+    <!--인라인 스타일 : 태그에 직접 스타일 지정-->
+    <div style="color: red;">첫번째 영역</div>
     <div>두번째 영역</div>
     <div></div>
 
