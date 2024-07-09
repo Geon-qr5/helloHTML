@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>실습2</title>
     <style>
-        *{
+        /* import 구문은 style 태그 바로 아래 위치 해야합니다! */
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+        /*연습1
+         *{
             margin-top: 15px;
         }
        ul{
@@ -16,12 +19,59 @@
         font-size: 1.5em;
         color: rgb(150,30,20);
         font-weight: 550;
-       }
+       } */
+        /*연습2
+         span{
+            color: rgb(175,14,14);
+            font-weight: 800;
+        }
+        div{
+            border: 1px solid #eee;
+            width: 500px;
+            margin: 0px auto;
+        }
+        ul{
+            list-style: none;
+        }
+        body{
+            margin: 0px auto;
+        }
+        li{
+            line-height: 50px;
+        } */
+         
+        div{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .subject{
+            color: orangered;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+        li{
+            font-weight: 100;
+        }
+        ul{
+            list-style: none;
+        }
+        .dongle-regular {
+            font-family: "Dongle", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /* font-family 글꼴을 상속되는 속성이므로 부모요소의 글꼴을 지정하면
+            자식요소들도 부모의 글꼴을 사용 */
+        * {
+            font-family: "Dongle", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
 <div>
-    <h1>최신 웹 디자인 트렌드</h1>
+    <h1 class="dongle-regular">최신 웹 디자인 트렌드</h1>
     
     <ul>
         <li>
