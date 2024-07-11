@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이소소개</title>
+    <style>
+        *{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(2CSS/images/bg1.jpg);            
+        }
+        .container{
+            width: 800px;
+            height: 900px;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+        header{
+            width: 100%;
+            height: 200px;
+            margin: auto;
+            background-image: url(1HTML/images/top.jpg);
+            position: relative;
+        }
+        header>h1{
+            width: 500px;
+            height: 60px;
+            background-color: rgba(50, 205, 159, 0.699);
+            color: blanchedalmond;
+            text-shadow: 3px 3px 2px black;
+            position: absolute;
+            bottom: 10px;
+            right: 40px;
+            text-align: center;
+            align-content: center;
+        }
+        nav>ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav>ul>li{
+            list-style: none;
+            /* display: inline-block; */
+            width: 25%;
+            height: 40px;
+            float: left;
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+        nav>ul>li>a{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            align-content: center;
+            background-color: green;
+            color: beige;
+            font-weight: 700;
+            display: inline-block;
+        }
+        nav>ul>li>a:hover{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            align-content: center;
+            background-color: yellowgreen;
+            color: black;
+            font-weight: 700;
+            display: inline-block;
+        }
+        main{
+            background-color: rgba(40, 75, 230, 0.479);
+            float: left;
+            width: 75%;
+            height: 600px;
+            padding: 10px;
+            position: relative;
+        }
+        aside{
+            background-color: rgba(127, 255, 185, 0.692);
+            float: right;
+            width: 25%;
+            height: 600px;
+            padding: 10px;
+            position: relative;
+        }
+        footer{
+            background-color: rgb(12, 63, 2);
+            color: white;
+            clear: both;
+            width: 100%;
+            height: 60px;
+            padding: 10px;
+            font-weight: 600;
+        }
+        .main_dog{
+            width: 100%;
+            height: 25%;
+            display: inline-block;
+            position: absolute;
+            bottom: 5px;
+        }
+        .main_side_dog{
+            display: inline-block;
+            position: absolute;
+            bottom: 5px;
+        }
+        .side_section{
+            width: 100%;
+            height: 25%;
+        }
+        .side_section:hover{
+            background-color: rgba(245, 7, 225, 0.678);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><b>이</b>세상 <b>소</b>중한 강아지 이소(It So)</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">소개</a></li>
+                <li><a href="">사진</a></li>
+                <li><a href="">동영상</a></li>
+                <li><a href="">Call</a></li>
+            </ul>
+        </nav>
+        <main>
+            메인영역
+            <img class="main_dog" src="2CSS/실습_레이아웃/images/2.png" alt="">
+        </main>
+        <aside>
+            <img class="main_side_dog" src="2CSS/실습_레이아웃/images/1.png" alt="">
+            <fieldset class="side_section">
+                <legend>section1</legend>
+                내용1
+            </fieldset>
+            <fieldset class="side_section">
+                <legend>section2</legend>
+                내용2
+            </fieldset>
+            <fieldset class="side_section">
+                <legend>section3</legend>
+                내용3
+            </fieldset>
+        </aside>
+        <footer>
+            하단
+        </footer>
+    </div>
+</body>
+</html>
